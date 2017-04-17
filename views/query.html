@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="query.js"></script>
+    
+</head>
+
+
+<script src="https://apis.google.com/js/api.js"></script>
+
+<script>
+function start() {
+  // 2. Initialize the JavaScript client library.
+  gapi.client.init({
+    'apiKey': 'AIzaSyAk8sAWGxHecKy6oflprG3NBb0Fj8f7PKY',
+    'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest'],
+    // clientId and scope are optional if auth is not required.
+    'clientId': '714257246673-28nntr8pes7h637edhlkinqlneqnbj9d.apps.googleusercontent.com',
+    'scope': 'https://mail.google.com/',
+  }).then(function() {
+    // 3. Initialize and make the API request.
+    return gapi.client.gmail.users.messages.get({
+    'userId': 'andriesdepuydt@gmail.com',
+    'id': '15b5806d6e65740d'
+  });
+  }).then(function(response) {
+    console.log(response.result);
+  }, function(reason) {
+    console.log('Error: ' + reason.result.error.message);
+  });
+};
+// 1. Load the JavaScript client library.
+gapi.load('client', start);
+
+
+
+
+</script>
+
+
+</body>
+
+</html>

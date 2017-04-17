@@ -1,0 +1,13 @@
+# [START runtime]
+runtime: nodejs
+env: flex
+# [END runtime]
+
+# Temporary setting to keep gcloud from uploading node_modules and Google SDK
+#skip_files:
+# - ^node_modules$
+# - ^google-cloud-sdk$
+ 
+# Env varibles
+env_variables:
+    APIAI_ACCESS_TOKEN: "blablabla"

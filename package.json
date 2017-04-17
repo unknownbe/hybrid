@@ -1,0 +1,59 @@
+{
+  "name": "Hybrid",
+  "version": "0.0.1",
+  "description": "Bring together the world of mails and files",
+  "author": "Andries Depuydt",
+  "main": "src/app.js",
+  "private": true,
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/language": "~0.8.0",
+    "async": "~2.0.0",
+    "body-parser": "~1.17.1",
+    "bootstrap": "~3.3.7",
+    "bootstrap3-dialog": "~1.35.3",
+    "crypto": "~0.0.3",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.5",
+    "express": "~4.15.2",
+    "express-basic-auth": "~1.0.1",
+    "express-rate-limit": "~2.6.0",
+    "googleapis": "^19.0.0",
+    "helmet": "~3.5.0",
+    "html-entities": "~1.2.0",
+    "ip": "~1.1.5",
+    "jquery": "~3.2.1",
+    "json-bigint": "~0.2.0",
+    "moment": "~2.18.1",
+    "moment-timezone": "~0.5.13",
+    "morgan": "~1.8.1",
+    "os-utils": "~0.0.14",
+    "request": "~2.81.0",
+    "serve-favicon": "~2.4.2",
+    "twilio": "~2.11.1",
+    "uuid": "~3.0.0-rc.13",
+    "winston": "~2.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tobecompleted"
+  },
+  "bugs": {
+    "url": "https://github.com/tobecompleted"
+  },
+  "homepage": "https://github.com/tobecompleted#readme",
+  "engines": {
+    "node": "6.10.1",
+    "npm": "4.5.0"
+  },
+  "keywords": [
+    "Hybrid"
+  ],
+  "devDependencies": {
+    "snyk": "^1.27.1"
+  }
+}
