@@ -34,7 +34,8 @@ app.use(bodyParser.text({
     var oauth2Client = new OAuth2(
         '714257246673-28nntr8pes7h637edhlkinqlneqnbj9d.apps.googleusercontent.com', //YOUR_CLIENT_ID
         'kTfck1WWzDaSNJ96KS2BYu16', //YOUR_CLIENT_SECRET
-        'https://hybrid-unknownbe.c9users.io/oauthcallback' //YOUR_REDIRECT_URL
+        //'https://hybrid-unknownbe.c9users.io/oauthcallback' //YOUR_REDIRECT_URL
+        'https://unknownbehybrid.herokuapp.com/oauthcallback'
     );
     var plus = google.plus('v1');
     var drive = google.drive('v3');
